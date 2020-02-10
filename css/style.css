@@ -1,0 +1,311 @@
+/*GENERAL*/
+h6{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+}
+
+h4{
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 16px;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.fa{
+    color: #2486e8;
+}
+
+
+/*NAVIGATION MENU*/
+
+nav{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.nav-item{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-link{
+    font-size: 13px;
+    color: white !important;
+    font-weight: normal;
+}
+
+/*HEADER SECTION*/
+
+#headerSection{
+    background-image: url('../imoji/slide_03.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.introText{
+    width: 50%;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    text-align: center;
+}
+
+.introText{
+    color: white;
+}
+
+.myButton{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: white !important;
+    margin-top: 60px;
+    cursor: pointer;
+    background-color: #a4d28f !important;
+    border-color: #a4d28f !important;
+    transition : all ease .4s;
+
+}
+
+.myButton:hover{
+    background-color: #5c9d7d !important;
+    border: #5c9d7d !important;
+}
+
+/*FEATURES SECTION*/
+
+#features, #aboutUs, #team, #portfolio, #contact{
+    background-color: #f6f6f6;
+}
+
+#features i{
+    font-size: 15px;
+    color: black !important;
+}
+
+#headline{
+    color: #a4d28f;
+}
+
+/*ABOUT US SECTION*/
+
+#aboutUs p{
+    line-height: 30px;
+}
+
+#aboutUs .myButton{
+    margin: 0;
+}
+
+
+/*TEAM SECTION*/
+
+#team .card{
+    background-color: #f6f6f6;
+    border : none;
+    opacity: 0.7;
+    transition: all .5s ease;
+}
+
+#team .card:hover{
+    opacity: 1;
+}
+
+/*PORTFOLIO SECTION*/
+
+#portfolio .imageContainer{
+    position: relative;
+    transform: all .5 ease;
+}
+
+#portfolio .imageOverlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #a4d28f;
+    opacity: 0;
+}
+
+#portfolio .imageContainer:hover .imageOverlay{
+    opacity: 0.9;
+}
+
+#portfolio .imageText{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    text-align: center;
+}
+
+.imageText .fa{
+   top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate3d(-50%,-50%,0);
+    color: white;
+    font-size: 40px;
+}
+
+/*TESTIMONIALS SECTION*/
+
+#testimonials{
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url('../imoji/Office.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quote .fa{
+    color: white;
+}
+
+.sliderImage{
+    padding: 0;
+    width: 100%;
+    height: 250px;
+    opacity: 0;
+}
+
+.blockquote p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.blockquote-footer{
+    font-size: 16px;
+    color: #a4d28f !important;
+}
+
+/*CONTACT SECTION*/ 
+
+.infoComp p{
+    font-size: 19px;
+}
+
+.messageBlock .myButton{
+    margin: 0;
+}
+
+.social{
+    position: absolute;
+    bottom: 0;
+}
+
+#pageFooter{
+    background-color: rgba(0,0,0,.9);
+}
+
+#pageFooter p{
+    color: #a4d28f;
+    font-size: 16px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1200px ){
+    #aboutUs .myButton{
+        position:  absolute;
+        bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    #headerSection h1{
+        font-size: 36px;
+    }
+
+    #aboutUs .myButton{
+        position: relative;
+    }
+
+    #aboutUs p{
+        line-height: 20px;
+    }
+
+    #aboutUs .row{
+        text-align: center;
+    }
+
+        #team .d-flex{
+            padding-top :0;
+        }
+
+}
+
+@media screen and (max-width: 720px){
+    #headerSection h1{
+        font-size: 30px;
+    }
+
+    #headerSection h6{
+        font-size: 16px;
+    }
+
+    #headerSection p{
+        font-size: 13px;
+    }
+
+    #headerSection .myButton{
+        margin-top: 30px;
+    }
+
+    #team .d-flex{
+        position: relative;
+    }
+
+
+
+    .social{
+      position: relative;
+  }
+
+    .infoComp p{
+        font-size: 16px;
+    }
+
+    .social h5{
+        font-size: 18px;
+    }
+
+    .messageBlock{
+        padding-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 540px){
+    #headerSection h1{
+        font-size: 18px;
+    }
+
+    #headerSection h6{
+        font-size: 14px;
+    }
+
+}
